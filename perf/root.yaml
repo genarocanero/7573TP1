@@ -19,8 +19,23 @@ config:
 
   phases:
     - name: Plain
+      duration: 20
+      arrivalRate: 0
+    - name: Plain
+      duration: 120
+      arrivalRate: 15
+    - name: Plain
       duration: 120
       arrivalRate: 30
+    - name: Plain
+      duration: 120
+      arrivalRate: 45
+    - name: Plain
+      duration: 120
+      arrivalRate: 60
+    - name: Plain
+      duration: 120
+      arrivalRate: 10
 
 scenarios:
   - name: Root (/)
