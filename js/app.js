@@ -20,5 +20,5 @@ app.get("/BusySleep/",(request,res) => {
 	res.status(200);
 	res.send('ping busy wait');
 });
-app.listen(PORT,()=>{console.log("escuchando en el puerto PORT")});
+app.listen(PORT,()=>{console.log("escuchando en el puerto ",PORT)});
 

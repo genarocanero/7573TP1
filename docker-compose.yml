@@ -2,14 +2,14 @@ version: '2'
 
 services:
     node:
-        image: server.js:v0.0.2
-        #        volumes:
-        #    -  ./js/app.js:/app/app.js:ro
+        build: js/
+        volumes:
+           -  ./js/app.js:/app/app.js:ro
 
     gunicorn:
-        image: server_py:v0.0.2
-        #        volumes:
-        #    -  ./py/app.py:/app/app.py:ro
+        build: py/
+        volumes:
+           -  ./py/app.py:/app/app.py:ro
 
     nginx:
         image: nginx:1.15.8
